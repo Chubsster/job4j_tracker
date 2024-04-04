@@ -11,3 +11,4 @@ public class BallStory {
             wolf.tryEat(ball);
         }
     }
+
