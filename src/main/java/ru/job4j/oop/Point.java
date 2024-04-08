@@ -41,3 +41,4 @@ public class Point {
         System.out.println(distance1);
     }
 }
+
