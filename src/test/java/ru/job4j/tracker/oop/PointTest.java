@@ -1,6 +1,8 @@
 package ru.job4j.tracker.oop;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import ru.job4j.oop.Point;
 
 import static java.awt.geom.Point2D.distance;
 import static org.assertj.core.api.Assertions.*;
@@ -48,5 +50,14 @@ public class PointTest {
         int y2 = 4;
         double output = distance(x1, y1, x2, y2);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
+
+    @Test
+    public void when01to00to00then1() {
+        int expected = 1;
+        Point c = new Point(0, 1, 0);
+        Point d = new Point(0, 0, 0);
+        double dist = c.distance3d(d);
+        Assert.assertEquals(expected, dist, 0.01);
     }
 }
