@@ -13,7 +13,6 @@ public class Max {
                     );
         }
 
-
         public int max(int left, int right, int third, int fourth) {
             return max(
                 left,
