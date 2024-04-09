@@ -6,17 +6,17 @@ public class Broken {
 
     public static final String NEWVALUE = "";
 
-    String name;
+    private String name;
 
-    Broken() {
+    public Broken() {
     }
 
-    void echo() { }
+    public void echo() { }
 
-    void method(int a, int b, int c, int d) {
+    public void method(int a, int b, int c, int d) {
     }
 
-    void media(Object obj) {
+    public void media(Object obj) {
         if (obj != null) {
             System.out.println(obj);
         }
