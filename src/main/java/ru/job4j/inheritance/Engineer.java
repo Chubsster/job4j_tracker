@@ -1,6 +1,5 @@
 package ru.job4j.inheritance;
 
-public class Engeneer {
     public class Engineer extends Profession {
         private int experience;
 
@@ -9,5 +8,4 @@ public class Engeneer {
             this.experience = experience;
         }
     }
-}
 
