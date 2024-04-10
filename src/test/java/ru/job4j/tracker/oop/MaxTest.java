@@ -1,11 +1,10 @@
 package ru.job4j.tracker.oop;
 
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import ru.job4j.oop.Max;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static sun.swing.MenuItemLayoutHelper.max;
 
 public class MaxTest {
     @Test
@@ -22,7 +21,7 @@ public class MaxTest {
         int expected = 3;
         Max max = new Max();
         int max1 = max.max(1, 2, 3);
-        Assert.assertEquals(expected, max1);
+        Assertions.assertEquals(expected, max1);
     }
 
     @Test
@@ -30,7 +29,7 @@ public class MaxTest {
         int expected = 4;
         Max max = new Max();
         int max1 = max.max(1, 2, 3, 4);
-        Assert.assertEquals(expected, max1);
+        Assertions.assertEquals(expected, max1);
     }
 
 }
