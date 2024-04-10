@@ -21,7 +21,7 @@ public class MaxTest {
     void whenMax2To2To3Then3() {
         int expected = 3;
         Max max = new Max();
-        int max1 = max.max(2,2,3);
+        int max1 = max.max(1, 2, 3);
         Assert.assertEquals(expected, max1);
     }
 
