@@ -30,6 +30,7 @@ public class MaxTest {
         int expected = 4;
         Max max = new Max();
         int max1 = max.max(1, 2, 3, 4);
+        Assert.assertEquals(expected, max1);
     }
 
 }
