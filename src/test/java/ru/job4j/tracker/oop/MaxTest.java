@@ -1,9 +1,7 @@
 package ru.job4j.tracker.oop;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import ru.job4j.oop.Max;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class MaxTest {
@@ -21,7 +19,7 @@ public class MaxTest {
         int expected = 3;
         Max max = new Max();
         int max1 = max.max(1, 2, 3);
-        Assertions.assertEquals(expected, max1);
+        assertThat(max1).isEqualTo(expected);
     }
 
     @Test
@@ -29,7 +27,7 @@ public class MaxTest {
         int expected = 4;
         Max max = new Max();
         int max1 = max.max(1, 2, 3, 4);
-        Assertions.assertEquals(expected, max1);
+        assertThat(max1).isEqualTo(expected);
     }
 
 }
