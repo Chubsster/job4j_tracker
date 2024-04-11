@@ -5,16 +5,5 @@ public class TextReport {
     public String generate(String name, String body) {
         return name + System.lineSeparator() + body;
     }
-
-    public static class JSONReport extends TextReport {
-        @Override
-        public String generate(String name, String body) {
-            String ln = System.lineSeparator();
-            return
-                    "{" + ln
-                            + "\t\"name\" : \"" + name + "\"," + ln
-                            + "\t\"body\" : \"" + body + "\"" + ln
-                            + "}";
-        }
-        }
     }
+

@@ -1,11 +1,10 @@
 package ru.job4j.tracker.inheritance;
 
 import org.junit.jupiter.api.Test;
-import ru.job4j.inheritance.TextReport;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class TextReportTest {
+public class JSONReport {
 
     @Test
     public void whenTestGenerateMethod() {
@@ -16,7 +15,7 @@ public class TextReportTest {
                 + "}";
         String name = "Report's name";
         String body = "Report's body";
-        String result = new TextReport.JSONReport().generate(name, body);
+        String result = new ru.job4j.inheritance.JSONReport().generate(name, body);
         assertThat(result).isEqualTo(expected);
     }
 
@@ -29,7 +28,7 @@ public class TextReportTest {
                 + "}";
         String name = "David Gilmour";
         String body = "Shine On You Crazy Diamond";
-        String result = new TextReport.JSONReport().generate(name, body);
+        String result = new ru.job4j.inheritance.JSONReport().generate(name, body);
         assertThat(result).isEqualTo(expected);
     }
 }
