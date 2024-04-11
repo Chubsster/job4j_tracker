@@ -1,10 +1,9 @@
 package ru.job4j.tracker.inheritance;
 
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class JSONReport {
+public class JSONReportTest {
 
     @Test
     public void whenTestGenerateMethod() {
