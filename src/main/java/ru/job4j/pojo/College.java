@@ -13,3 +13,4 @@ public class College {
         System.out.println(student.getFullName() + " joins the group " + student.getGroup() + " when arrived " + student.getCreated());
     }
 }
+
