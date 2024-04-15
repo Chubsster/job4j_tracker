@@ -11,3 +11,4 @@ public class StartUI {
         System.out.println("Текущие дата и время после форматирования: " + data.format(formatter));
     }
 }
+
