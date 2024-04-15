@@ -8,9 +8,9 @@ public class College {
         student.setFullName("Shamaev Evgeny");
         student.setGroup("Java");
         student.setCreated(new Date());
-        ;
 
         System.out.println(student.getFullName() + " joins the group " + student.getGroup() + " when arrived " + student.getCreated());
     }
 }
+
 
