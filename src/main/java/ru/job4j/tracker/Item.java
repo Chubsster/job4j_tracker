@@ -12,20 +12,6 @@ public class Item {
         return created;
     }
 
-    public class StartUi {
-        public static void main(String[] args) {
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-        }
-    }
-
-    public class DateTime {
-        public static void main(String[] args) {
-            Item item = new Item();
-            LocalDateTime data = item.getCreated();
-            System.out.println("Текущие дата и время после форматирования: " + data);
-        }
-    }
-
     public Item() {
     }
 
