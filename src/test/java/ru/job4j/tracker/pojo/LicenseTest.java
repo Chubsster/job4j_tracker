@@ -15,3 +15,4 @@ public class LicenseTest {
         assertThat(first).isEqualTo(second);
     }
 }
+
